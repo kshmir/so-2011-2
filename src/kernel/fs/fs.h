@@ -21,7 +21,8 @@ typedef struct inode inode;
 #define EXT2_NAME_LEN			255
 
 // Group count: 8 x 6 = 48MB, the disk didn't like to have more :(
-#define FS_BLOCK_GROUP_COUNT	6
+#define FS_BLOCK_GROUP_COUNT	1
+
 #define	FS_BLOCK_GROUP_SIZE		sizeof(block_group)
 
 // Size of a block: 1K

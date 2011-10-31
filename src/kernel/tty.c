@@ -156,6 +156,14 @@ int tty_main (int argc, char ** argv)
 	printf("Sistemas Operativos - 2011 - ITBA\n");
 	printf("Dennis Ritchie RIP\n");
 
+	if(tty_number == 1)
+	{
+		fs_init();
+		users_init();				// Init the users
+
+		fs_finish();
+	}
+
 	int child;
 	while(1) {
 		switch (status){

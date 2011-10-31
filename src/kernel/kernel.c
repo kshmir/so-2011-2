@@ -400,7 +400,7 @@ int idle_main(int argc, char ** params) {
 	Cli();
 	make_atomic();
 
-	mount();					// Mount or start the FS
+					// Mount or start the FS
 
 	tty_init(0);				// Load up the TTY's
 	tty_init(1);
@@ -410,9 +410,8 @@ int idle_main(int argc, char ** params) {
 	tty_init(5);		
 	
 	setready(); 				// Set the kernel as ready and the FS as loaded
-	users_init();				// Init the users
 	
-	fs_finish();
+
 
 	release_atomic();	
 	Sti();

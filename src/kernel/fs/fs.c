@@ -60,6 +60,7 @@ static void block_write(void * data, unsigned int block_n) {
 
 // Reads a block from disk (or disk cache)
 static void block_read(void * data, unsigned int block_n) {
+	printf("Read %d\n", block_n);
 	hdd_read( data, block_n * 2 + 1);	
 }
 
